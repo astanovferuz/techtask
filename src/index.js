@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/font-awesome/css/font-awesome.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-
+require("dotenv").config();
 
 
 ReactDOM.render(

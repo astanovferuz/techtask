@@ -1,10 +1,23 @@
 import React from "react";
 import Card from "./Card";
 
-const TabNew = ({ isOpen, toggle, state }) => {
+const TabNew = ({ dataNew, loading }) => {
+
+    if (loading) {
+        return <p>Loading...</p>
+    }
+
+    const mappedData = dataNew.map(item => {
+        return (
+            <Card key={ item.id } item={ item } />
+        )
+    })
+
     return (
-        <div>
-            <Card state={ state } isOpen={ isOpen } toggle={ toggle } />
+        <div className="container mt-4">
+            <div className="row">
+                { mappedData }
+            </div>
         </div>
     )
 }

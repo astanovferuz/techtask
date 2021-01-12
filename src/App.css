@@ -224,14 +224,13 @@ h2  {
 }
 
 .collapsible {
-    width: 100%;
     background-color: #30303b;
     border-radius: 15px;
   }
 
 .cardAvatar {
-    margin-top: 20px;
-    margin-left: 5px;
+    /* margin-top: 20px;
+    margin-left: 5px; */
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -265,6 +264,12 @@ h2  {
 
 .smsl   {
     color: #6560FF!important;
+}
+
+
+.btn.focus, .btn:focus {
+    outline: 0!important;
+    box-shadow: none!important;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES

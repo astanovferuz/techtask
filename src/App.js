@@ -1,20 +1,19 @@
 import './App.css';
 import Main from './components/Main';
 import { BrowserRouter } from "react-router-dom";
-import { Provider } from "react-redux";
-import { ConfigureStore } from "./redux/ConfigureStore";
+import { ApolloProvider } from '@apollo/client';
+import { client } from "./graphql/client";
 
-const store = ConfigureStore();
 
 function App () {
   return (
-    <Provider store={ store }>
+    <ApolloProvider client={ client }>
       <BrowserRouter>
-        <div classNameNameName="App">
+        <div className="App">
           <Main />
         </div>
       </BrowserRouter>
-    </Provider>
+    </ApolloProvider>
   );
 }
 
