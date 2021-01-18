@@ -14,7 +14,7 @@ const CardCollapsible = ({ item }) => {
                 <div className="row">
                     <img className="cardAvatar ml-5 mt-3" src="https://s3.eu-central-1.amazonaws.com/cdn.25superstars.staging.com/users/thumbnails/photos/thumbnail-photo-jana.craemer.jpg" alt="" />
                     <div className="col ml-md-2 ml-4">
-                        <p className="text-white fontSlick mb-0 mt-3"><span className="textBold">{ item.requesterName }</span> has requested <span className="textBold">Stich</span></p>
+                        <p className="text-white mb-0 mt-3">{ item.requesterName } has requested Stich</p>
                         <p className="text-white">{ item.price } $</p>
                         <Accordion>
                             <Accordion.Collapse eventKey="0">
@@ -26,7 +26,7 @@ const CardCollapsible = ({ item }) => {
                                 </Card.Body>
                             </Accordion.Collapse>
                             <Accordion.Toggle className="pl-0" as={ Button } variant="link" eventKey="0">
-                                { !isOpen ? <a onClick={ toggle } className="btn offset-md-1 pl-0 mb-3 ml-0 smsl">SHOW LESS <span><i className="fa fa-chevron-up" /></span></a> :
+                                { isOpen ? <a onClick={ toggle } className="btn offset-md-1 pl-0 mb-3 ml-0 smsl">SHOW LESS <span><i className="fa fa-chevron-up" /></span></a> :
                                     <a onClick={ toggle } className="btn offset-md-1 pl-0 mb-3 ml-0 smsl">SHOW MORE <span><i className="fa fa-chevron-down" /></span></a>
                                 }
                             </Accordion.Toggle>

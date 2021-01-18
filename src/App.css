@@ -240,10 +240,6 @@ h2  {
     font-weight: 600;
 }
 
-.fontSlick  {
-    font-weight: 100!important;
-}
-
 .form-control   {
     background-color: #4F4F55!important;
     border: none!important;
@@ -271,6 +267,8 @@ h2  {
     outline: 0!important;
     box-shadow: none!important;
 }
+
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
